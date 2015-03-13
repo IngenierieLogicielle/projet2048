@@ -74,18 +74,16 @@ public class Grid
 			}
 		}
 		
-		int pos_y_case1 = customRandom(4); // System.out.println("H1 _"+pos_y_case1);
-		int pos_x_case1 = customRandom(4); // System.out.println("W1 _"+pos_x_case1);
+		int pos_y_case1 = customRandom(4);
+		int pos_x_case1 = customRandom(4);
 		
-		int pos_y_case2 = customRandom(4); // System.out.println("H2 _"+pos_y_case2);
-		int pos_x_case2 = customRandom(4); // System.out.println("W2 _"+pos_x_case2);
-		
-		// System.out.println((pos_y_case1 == pos_y_case2) && (pos_x_case1 == pos_x_case2));
+		int pos_y_case2 = customRandom(4);
+		int pos_x_case2 = customRandom(4);
 		
 		while ((pos_y_case1 == pos_y_case2) && (pos_x_case1 == pos_x_case2))
 		{
-			pos_y_case2 = customRandom(4); // System.out.println("H2 "+pos_y_case2);
-			pos_x_case2 = customRandom(4); // System.out.println("W2 "+pos_x_case2);
+			pos_y_case2 = customRandom(4);
+			pos_x_case2 = customRandom(4);
 		}
 		
 		cases[pos_y_case1][pos_x_case1] = new Case(true);
@@ -145,14 +143,6 @@ public class Grid
 	
 	public void moveDown()
 	{
-		/*for (int y=cases.length-1; y>1; y--)
-		{
-			for (int x=0; x<cases[y].length; x++)
-			{
-				merge(cases[y-1][x],cases[y][x]);
-			}
-		}*/
-		
 		boolean update;
 		
 		do
@@ -172,11 +162,6 @@ public class Grid
 						move = move(cases[y-1][x],cases[y][x]);
 						update = (update || merge || move);
 					} while (merge || move);
-					
-					// while (loop)
-					// {
-						// loop = merge(cases[y-1][x],cases[y][x]);
-					// }
 				}
 			}
 		} while (update);
@@ -203,8 +188,6 @@ public class Grid
 						move = move(cases[y+1][x],cases[y][x]);
 						update = (update || merge || move);
 					} while (merge || move);
-					
-					// merge(cases[y-1][x],cases[y][x]);
 				}
 			}
 		} while (update);
@@ -216,13 +199,6 @@ public class Grid
 		
 		do
 		{
-			/*
-			for (int y=0; y<cases.length; y++)
-			{
-				
-			}
-			*/
-			
 			update = false;
 			
 			for (int y=0; y<cases.length-1; y++)
@@ -238,8 +214,6 @@ public class Grid
 						move = move(cases[x][y+1],cases[x][y]);
 						update = (update || merge || move);
 					} while (merge || move);
-					
-					// merge(cases[y-1][x],cases[y][x]);
 				}
 			}
 		} while (update);
@@ -251,13 +225,6 @@ public class Grid
 		
 		do
 		{
-			/*
-			for (int y=0; y<cases.length; y++)
-			{
-				
-			}
-			*/
-			
 			update = false;
 			
 			for (int y=cases.length-1; y>0; y--)
@@ -273,11 +240,6 @@ public class Grid
 						move = move(cases[x][y-1],cases[x][y]);
 						update = (update || merge || move);
 					} while (merge || move);
-					
-					// while (loop)
-					// {
-						// loop = merge(cases[y-1][x],cases[y][x]);
-					// }
 				}
 			}
 		} while (update);
