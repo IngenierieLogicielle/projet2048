@@ -4,16 +4,12 @@ public class Game
 {
 	public static void main(String args[])
 	{
-		// System.out.println('A');
-		
 		boolean end = false;
 		String saisie;
 		Scanner s = new Scanner(System.in);
-		Grid grid = new Grid(4,4); // System.out.println('A');
-		grid.initGrid(); // System.out.println('A');
+		Grid grid = new Grid(4,4);
+		grid.initGrid();
 		grid.displayGrid();
-		
-		// System.out.println('B');
 		
 		while (!end)
 		{
@@ -62,7 +58,5 @@ public class Game
 					break;
 			}
 		}
-		
-		// System.out.println(Grid.customRandom(4));
 	}
 }
