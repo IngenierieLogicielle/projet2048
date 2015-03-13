@@ -13,3 +13,5 @@ hs_err_pid*
 /Main/nbproject/private/
 /Main/build/
 /exemple2048/nbproject/private/
+/nbproject/private/
+/Main/dist/
