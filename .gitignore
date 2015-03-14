@@ -15,3 +15,6 @@ hs_err_pid*
 /exemple2048/nbproject/private/
 /nbproject/private/
 /Main/dist/
+Main/nbproject/project.properties
+Main/nbproject/project.properties
+*.properties
