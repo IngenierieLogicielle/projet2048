@@ -47,7 +47,7 @@ public class Case
         return true;      
     }
     //fonction pour le mouvement 
-    public boolean move5LeRetourDuRetour (Case c){
+    public boolean move6LeRetourDuRetour (Case c){
         
         return true;    
     }
