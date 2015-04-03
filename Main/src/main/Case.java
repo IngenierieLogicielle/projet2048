@@ -13,6 +13,8 @@ public class Case
         this.value = value;
     }
     
+    // modif Joseph
+    
     // getters
     public int getX(){
         return this.x;
