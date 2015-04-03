@@ -47,6 +47,9 @@ public class Case
         return true;      
     }
     
-    
+    public boolean move (Case c){
+        
+        return true;    
+    }
     
 }
