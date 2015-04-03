@@ -6,6 +6,7 @@ public class Case
     private int x;
     private int y;
     private int value;
+  
     
     public Case(){
         this.x = x;
@@ -40,5 +41,12 @@ public class Case
         this.value = value;
     }
       
-      
+    //détection de la case suivante
+    public boolean getNextCase(int direction){
+        
+        return true;      
+    }
+    
+    
+    
 }
